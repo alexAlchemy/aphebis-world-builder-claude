@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "aphebis-worldbuilder": {
+      "type": "http",
+      "url": "https://prime-api-dev.aphebis.com/mcp"
+    }
+  }
+}
