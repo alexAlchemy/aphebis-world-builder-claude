@@ -151,61 +151,22 @@ The business-context skill follows the PSO pattern:
 
 ### For Agent Creators
 
-When creating a new agent, decide on the **context strategy**:
-
-**Option A: Embed Essential Context (for high-importance agents)**
-
-Agents that are frequently consulted for business/technical decisions should have essential context embedded directly:
+When creating a new agent, add a **Business Context Access** section:
 
 ```markdown
-## Aphebis: Your Company
+## Business Context Access
 
-**You work for Aphebis.** This context is embedded here so you can operate immediately.
+**IMPORTANT:** You work for Aphebis. Before making recommendations, invoke
+the business-context skill to understand our business.
 
-### Identity
-- Name, Product, Stage, Core Tech...
-
-### Financial Reality
-- Budget constraints, approval gates...
-
-### Risk Tolerance
-- What risks we take vs avoid...
-
-### People
-- Key stakeholders and their roles...
-
-### For Deeper Context
-The `business-context` skill has full details. Query it when you need more than essentials.
+Use Skill tool with query:
+- "all" for full context when starting
+- "policies" for financial/risk constraints
+- "mission" for strategic alignment
+- "staff" and "org-chart" for coordination
 ```
 
-**Use this for:** business-manager, technical-strategy-advisor, any agent that provides core decision-making.
-
-**Option B: Query On-Demand (for specialist/low-frequency agents)**
-
-For agents that don't constantly need business context, add a lighter section:
-
-```markdown
-## Business Context
-
-You serve Aphebis, an AI character simulation startup.
-Key context: [brief 2-3 line summary]
-
-If you need deeper business context, invoke the `business-context` skill.
-```
-
-**Use this for:** docs-query-expert, one-off specialists, utility agents.
-
-**Trade-offs:**
-
-| Approach | Pros | Cons |
-|----------|------|------|
-| **Embed context** | Fast, no queries, always available | Longer agent files, context duplication |
-| **Query skill** | Single source of truth, DRY | Latency, tokens, may not be used |
-
-**Hybrid approach (recommended):**
-- Embed the **essentials** that the agent needs 80% of the time
-- Reference the **skill** for deeper dives and edge cases
-- Update agent files when core context changes (rare)
+This ensures every new agent automatically has access to current business context.
 
 ---
 
@@ -448,4 +409,3 @@ As of 2025-12-25, the following roles are unfilled:
 | 2025-12-25 | Initial architecture documentation | Claude |
 | 2025-12-25 | Added business-context skill and org/business/ system | Claude |
 | 2025-12-25 | Updated all agents to use business-context skill | Claude |
-| 2025-12-25 | **Pivot:** Embedded essential context in core agents (business-manager, technical-strategy-advisor) for zero-latency access | Claude |
