@@ -9,7 +9,15 @@
       "Bash(mkdir:*)",
       "Bash(python:*)",
       "Bash(del:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "mcp__web-search-prime__webSearchPrime",
+      "mcp__web-reader__webReader",
+      "mcp__context7__resolve-library-id",
+      "Skill(pso)"
     ]
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "aphebis-worldbuilder"
+  ]
 }

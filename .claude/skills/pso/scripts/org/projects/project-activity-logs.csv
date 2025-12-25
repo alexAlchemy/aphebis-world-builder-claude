@@ -1,0 +1,4 @@
+projectId,datetime,agentName,note
+iz7Flo,2025-12-25T17:05:43.159443,TestAgent,Created project: Test Project - A test project for validation
+iz7Flo,2025-12-25T17:05:53.472040,TestAgent,Testing activity logging
+iz7Flo,2025-12-25T17:05:55.776322,project manager,Project closed by project manager

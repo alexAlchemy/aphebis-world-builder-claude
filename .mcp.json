@@ -3,6 +3,12 @@
     "aphebis-worldbuilder": {
       "type": "http",
       "url": "https://prime-api-dev.aphebis.com/mcp"
+    },
+    "context7": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"],
+      "disabled": false,
+      "autoApprove": []
     }
   }
 }
