@@ -3,7 +3,13 @@
     "allow": [
       "Bash(cat:*)",
       "Bash(ls:*)",
-      "Bash(unzip:*)"
+      "Bash(unzip:*)",
+      "Skill(document-skills:pdf)",
+      "Skill(document-skills:pdf:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(del:*)",
+      "Bash(rm:*)"
     ]
   }
 }
